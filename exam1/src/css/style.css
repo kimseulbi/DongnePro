@@ -1,0 +1,521 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&subset=korean');
+
+/* 스타일 초기화*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1em;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 숨김 콘텐츠 */
+.readable-hidden,
+legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 2.4rem 2rem;
+    background: #fff;
+    color: #101010;
+}
+
+.btn-icon-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.btn-icon {
+    cursor: pointer;
+    text-indent: 30px;
+    white-space: nowrap;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    margin-right: 1.5rem;
+}
+
+.btn-icon:last-child {
+    margin-right: 0;
+}
+
+.btn-filter {
+    background: transparent url("../../img/icon-filter-black.svg") no-repeat;
+}
+
+.btn-noti {
+    background: transparent url("../../img/icon-noti-black.svg") no-repeat;
+    position: relative;
+}
+
+.btn-arrow-left {
+    background: transparent url("../../img/icon-arrow-left-2px.svg") no-repeat;
+}
+
+.btn-noti::after {
+    display: block;
+    position: absolute;
+    content: "9+";
+    background: #ef0d36;
+    color: white;
+    border-radius: 16px;
+    bottom: calc(100% - 10px);
+    left: calc(100% - 15px);
+    font-size: 12px;
+    padding: 0.2rem 0.2rem;
+    height: 20px;
+    width: 30px;
+    text-indent: 0;
+}
+
+.main {
+    padding: 0 2rem;
+}
+
+article {
+    position: relative;
+}
+
+.page-heading {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.data-heading {
+    color: #727272;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+}
+
+.year-heading {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.list {
+    margin-bottom: 4rem;
+    z-index: 1;
+}
+
+.list .item {
+    border-top: 1px solid #ddd;
+    padding: .8rem 0;
+    position: relative;
+}
+
+.item .waiting {
+    color: #ef0d36;
+}
+
+.item h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: .2rem;
+}
+
+.item time {
+    color: #979797;
+}
+
+.item .item-brief {
+    margin: .2rem 0;
+}
+
+/* button */
+.btn {
+    padding: .8rem 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 5px;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    font-stretch: condensed;
+    cursor: pointer;
+}
+
+.btn-basic {
+    border: 1px solid #a6a6a6;
+    background-color: #fff;
+}
+
+.btn-active {
+    border: 0;
+    background-color: #ef0d36;
+    color: #fff;
+}
+
+/* dropdown */
+.wrapper-dropdown {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 100;
+}
+
+.btn-dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.icon-down {
+    overflow: hidden;
+    width: 20px;
+    height: 25px;
+    margin-left: .5rem;
+    display: inline-block;
+    background: transparent url("../../img/icon-down-black.svg") no-repeat;
+}
+
+.dropdown {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    color: #1d1d1d;
+    border-radius: 4px;
+    width: 160px;
+}
+
+.dropdown li {
+    padding: 1.5rem 1.2rem;
+    text-align: left;
+}
+
+.dropdown li:hover {
+    background: #f5f5f5;
+}
+
+.dropdown li:focus {
+    color: #ef0d36;
+    font-weight: 700;
+}
+
+.img-box {
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.img-box img {
+    display: block;
+    width: 32px;
+    margin: 0px auto;
+    line-height: 40px;
+    height: 40px;
+}
+
+.noti-list li {
+    padding: 1rem 0;
+    height: 60px;
+}
+
+.noti-list li:first-child {
+    border-top: 1px solid #ddd;
+}
+
+.noti-list .item-brief {
+    margin-left: 6rem;
+    line-height: 30px;
+    color: #4a4a4a;
+}
+
+.noti-list .item {
+    position: relative;
+}
+
+.item-brief-area {
+    margin-left: 6rem;
+}
+
+.item-brief-area p {
+    color: #4a4a4a;
+}
+
+.item-brief-area h4 {
+    font-weight: 500;
+}
+
+.icon-card {
+    border: 0;
+    overflow: hidden;
+    width: 20px;
+    height: 25px;
+    margin-left: .5rem;
+    display: inline-block;
+    background: transparent url("../../img/icon-payment-nor.svg") no-repeat;
+}
+
+.icon-repairer::after {
+    display: block;
+    position: absolute;
+    content: "";
+    border-radius: 16px;
+    bottom: -5px;
+    left: 30px;
+    font-size: 12px;
+    padding: 0.2rem 0.2rem;
+    height: 20px;
+    width: 20px;
+    text-indent: 5px;
+    background: #ef0d36 url("../../img/icon-paper-light-line.svg") no-repeat;
+    background-size: 80%;
+    background-origin: content-box;
+    background-position: center;
+}
+
+.icon-repair::after {
+    display: block;
+    position: absolute;
+    content: "";
+    border-radius: 16px;
+    bottom: -5px;
+    left: 30px;
+    font-size: 12px;
+    padding: 0.2rem 0.2rem;
+    height: 20px;
+    width: 20px;
+    text-indent: 5px;
+    background: #ef0d36 url("../../img/icon-repair-light-1px.svg") no-repeat;
+    background-size: 80%;
+    background-origin: content-box;
+    background-position: center;
+}
+
+.icon-payment::after {
+    display: block;
+    position: absolute;
+    content: "";
+    border-radius: 16px;
+    bottom: -5px;
+    left: 30px;
+    font-size: 12px;
+    padding: 0.2rem 0.2rem;
+    height: 20px;
+    width: 20px;
+    text-indent: 5px;
+    background: #ef0d36 url("../../img/icon-payment-light.svg") no-repeat;
+    background-size: 80%;
+    background-origin: content-box;
+    background-position: center;
+}
+
+.footer {
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 2.4rem 2rem;
+}
+
+.btn-group-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-toolbox {
+    background: transparent url("../../img/icon-toolbox-light.svg") no-repeat;
+}
+
+.btn-request {
+    position: relative;
+    background: transparent url("../../img/icon-request-sel.svg") no-repeat;
+}
+
+.btn-profile {
+    position: relative;
+    background: transparent url("../../img/icon-profile-light.svg") no-repeat;
+}
+
+.btn-request::after {
+    display: block;
+    position: absolute;
+    content: "9+";
+    background: #ef0d36;
+    color: white;
+    border-radius: 16px;
+    bottom: calc(100% - 10px);
+    left: calc(100% - 15px);
+    font-size: 12px;
+    padding: 0.2rem 0.2rem;
+    height: 20px;
+    width: 30px;
+    text-indent: 0;
+}
+
+.btn-profile::after {
+    display: block;
+    position: absolute;
+    content: "";
+    background: #ef0d36;
+    color: white;
+    border-radius: 5px;
+    bottom: calc(100% - 0px);
+    left: calc(100% - 8px);
+    height: 5px;
+    width: 5px;
+    text-indent: 0;
+}
+
+.btn-plus {
+    position: absolute;
+    bottom: 50px;
+    z-index: 100;
+    left: 45%;
+    width: 60px;
+    height: 60px;
+    background: #ef0d36;
+    border-radius: 50px;
+}
+
+.btn-plus::after {
+    content: "+";
+    font-size: 30px;
+    color: #fff;
+}
