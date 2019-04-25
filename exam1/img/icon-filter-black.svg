@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Common / icon-filter-black</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Common-/-icon-filter-black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M14,20.5 C12.8955,20.5 12,19.6045 12,18.5 C12,17.3955 12.8955,16.5 14,16.5 C15.1045,16.5 16,17.3955 16,18.5 C16,19.6045 15.1045,20.5 14,20.5 Z" id="Fill-5" fill="#111111" transform="translate(14.000000, 18.500000) rotate(-90.000000) translate(-14.000000, -18.500000) "></path>
+        <path d="M7,14 C5.8955,14 5,13.1045 5,12 C5,10.8955 5.8955,10 7,10 C8.1045,10 9,10.8955 9,12 C9,13.1045 8.1045,14 7,14 Z" id="Fill-7" fill="#111111"></path>
+        <path d="M18,7.5 C16.8955,7.5 16,6.6045 16,5.5 C16,4.3955 16.8955,3.5 18,3.5 C19.1045,3.5 20,4.3955 20,5.5 C20,6.6045 19.1045,7.5 18,7.5 Z" id="Fill-9" fill="#111111"></path>
+        <path d="M2,5.5 L22,5.5" id="Path-20" stroke="#111111" stroke-linecap="round"></path>
+        <path d="M2,18.5 L22,18.5" id="Path-20-Copy-2" stroke="#111111" stroke-linecap="round"></path>
+        <path d="M2,12 L22,12" id="Path-20-Copy" stroke="#111111" stroke-linecap="round"></path>
+    </g>
+</svg>

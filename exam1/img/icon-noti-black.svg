@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Common / icon-noti-black</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Library" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Common-/-icon-noti-nor" stroke="#111111">
+            <g id="Group" transform="translate(3.000000, 2.000000)">
+                <path d="M7.5,22 C9.15685425,22 10.5,20.6568542 10.5,19 C10.5,17.3431458 9.15685425,16 7.5,16" id="Oval-7" transform="translate(9.000000, 19.000000) rotate(-270.000000) translate(-9.000000, -19.000000) "></path>
+                <path d="M9,0 L9,0 C12.8659932,-7.10171439e-16 16,3.13400675 16,7 L16,13 L17.9044972,16.2470352 C18.0442058,16.4852286 17.9643681,16.7915788 17.7261746,16.9312874 C17.6494643,16.9762806 17.5621417,17 17.4732098,17 L0.526715347,17 C0.250572972,17 0.0267153471,16.7761424 0.0267153471,16.5 C0.0267153471,16.4110653 0.0504362618,16.3237399 0.0954322999,16.2470278 L2,13 L2,7 C2,3.13400675 5.13400675,7.10171439e-16 9,0 Z" id="IconButton.Noti_Black"></path>
+            </g>
+        </g>
+    </g>
+</svg>
